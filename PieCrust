@@ -2,8 +2,9 @@ import java.util.Scanner;
 Public class PieCrust
 {
   private String mood;
-  private String name;
+  private String name = " ";
   private boolean hasName=false;
+  Scanner in = new Scanner (System.in);
   public PieCrust()
   {
     mood="HAPPY";
@@ -14,8 +15,15 @@ Public class PieCrust
     {
       if(hasName==true)
       {
-        System.out.println("Do you want me to remember a different name?")
-        
+        System.out.println("Do you want me to remember a different name?");
+        String statement=in.nextLine();
+        if(statement.indexOf("yes")>=0 || statement.indexOf("yeah")>=0 || statement.indexOf("y")>=0)
+        {
+          System.out.println("Can you tell me your name again?");
+          statement=in.nextLine();
+          name=statement;
+          System.out.println("Got it. Your name is "+ name+ " .");
+        }
       }
     }
   }
