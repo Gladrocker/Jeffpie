@@ -1,4 +1,22 @@
+import java.util.Scanner;
 Public class PieCrust
 {
   private String mood;
+  private String name;
+  private boolean hasName=false;
+  public PieCrust()
+  {
+    mood="HAPPY";
+  }
+  public String getResponse(String input)
+  {
+    if(input.indexOf("name")>=0)
+    {
+      if(hasName==true)
+      {
+        System.out.println("Do you want me to remember a different name?")
+        
+      }
+    }
+  }
 }
