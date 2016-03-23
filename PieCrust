@@ -13,7 +13,7 @@ Public class PieCrust
   {
     if(input.indexOf("name")>=0)
     {
-      if(hasName==true)
+      if(hasName)
       {
         System.out.println("Do you want me to remember a different name?");
         String statement=in.nextLine();
